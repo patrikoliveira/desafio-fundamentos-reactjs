@@ -125,6 +125,7 @@ const Dashboard: React.FC = () => {
                         transaction.type === `income` ? 'income' : 'outcome'
                       }
                     >
+                      {transaction.type === 'outcome' ? '- ' : ''}
                       {transaction.formattedValue}
                     </td>
                     <td>{transaction.category.title}</td>
